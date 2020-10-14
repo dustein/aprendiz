@@ -1,0 +1,21 @@
+from datetime import date
+print('='*80)
+print('{:^80}'.format('Alistamento Militar'))
+print('='*80)
+print("""Alista-se aos 18 anos de idade completos.
+Vamos verificar sua situação...""")
+year = int(input('Em que nao você nasceu? '))
+idade = (date.today().year) - year
+print('Ok, nascido em {}, você tem {}'.format(year, idade))
+if idade == 18:
+    print('Você tem que se alistar esse ano!')
+elif idade < 17:
+    print('Faltam {} anos para você se alistar, fique atento'.format(18 - idade))
+elif idade == 17:
+    print('Ano que vem tem que se alistar hein!')
+elif idade == 19:
+    print('Ih, deveria ter se alistado ano passado!')
+else:
+    print('Ih, já se passaram {} anos que você deveria ter se alistado'.format(idade - 18))
+    print('Era pra ter se alistado em {}!'.format(year+18))
+print('FIM')
