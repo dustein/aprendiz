@@ -1,0 +1,12 @@
+print('.:.'*10)
+print('Maior ou Menor')
+print('.:.'*10)
+n1 = int(input('Primeiro número: '))
+n2 = int(input('Segundo número: '))
+if n1 > n2:
+    print('O número {} é maior que {}'.format(n1, n2))
+elif n1 < n2:
+    print('O número {} é maior que {}'.format(n2, n1))
+else:
+    print('Ambos os números são iguais...')
+    
