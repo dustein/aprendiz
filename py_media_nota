@@ -1,0 +1,6 @@
+print(' = '*5)
+print('Média das Notas')
+print(' = '*5)
+n1 = float(input('Primeira Nota: '))
+n2 = float(input('Segunda Nota: '))
+print('Com as notas em {} e {}, sua média final para o período foi {:.1f}.'.format(n1, n2, (n1+n2)/2))
