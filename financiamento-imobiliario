@@ -1,0 +1,15 @@
+from time import sleep
+print(' = '*8)
+print('Financiamento Imobiliário')
+print(' = '*8)
+imovel = float(input('Qual o preço do imóvel que você quer comprar utilizando o financiamento? -> '))
+salario = float(input('Qual seu salário? -> '))
+prazo = int(input('Por quantos anos pretende financiar? -> '))
+mensal = imovel/(prazo*12)
+print('Ok, o imóvel custa R$ {:.2f}, então, para financiar por {} anos, a parcela mensal vai ficar no valor de R$ {:.2f} ...'.format(imovel, prazo, mensal))
+print('c a l c u l a n d o  .    .     .')
+sleep(2)
+if mensal < salario*0.3:
+    print('Ok, vamos fazer esse financiamento.')
+else:
+    print('Infelizmente essa parcela mensal não pode ser aprovada para você, pois o limite de comprometimento de renda é de 30%.')
